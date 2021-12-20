@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aditya Priyadarshi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+table, th, td {
+  border:1px solid black;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  /* background: #1abc9c; */
+  background-image: url(https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Website</h1>
+  <p>A <b>responsive</b> website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <img class="fakeimg" style="height:200px;" src="https://images.unsplash.com/photo-1554080353-a576cf803bda?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80">
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>AUDIO EMBEDDING</h3>
+    
+<br>
+<iframe class="fakeimg" width="100%" height="200" src="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/05/cd/e5/05cde55a-e074-f642-4892-bff7867ebe9d/mzaf_2607745285419592020.plus.aac.p.m4a">
+</iframe>
+    <div class="fakeimg" style="height:60px;">Extra Box</div>
+  </div>
+  <div class="main">
+    <h2>VIDEO EMBEDDING</h2>
+    <!-- <h5>Title description, Dec 7, 2017</h5> -->
+    <iframe class="fakeimg" width="100%" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+    
+    <br>
+    <h2>Phrase Tags</h2>
+    <h5>Some Phrase Tags with their respective examples.</h5>
+    <!-- <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    <table style="width:100%">
+        <tr>
+          <th>Pharse Tags</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>Short Quote Tag</td>
+          <td>This can be defined as <q>scripting</q></td>
+        </tr>
+        <tr>
+          <td>Abbreviation Tag</td>
+          <td>Do you know the nickname of <abbr title = "Rowan Atkinson">Mr. Bean</abbr>?</td>
+        </tr>
+        <tr>
+            <td>Emphasis Tag</td>
+            <td>This is a <em>beautiful</em> mall</td>
+          </tr>
+
+      </table>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Contact me</h2>
+  <form>
+    <label for="fname">Full name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Email:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="fname">Query:</label><br>
+    <input type="text" id="fname1" name="fname"><br><br>
+
+    <input type="submit" value="Submit">
+  </form> 
+</div>
+
+</body>
+</html>
